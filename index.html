@@ -1,108 +1,428 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Faheem Motors - Premium Car Dealership</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#080808">
+  <meta name="description" content="FINE SWEM — Discover premium luxury cars in Karachi, Pakistan.">
+  <title>FAHEEM DEALER | Premium Luxury Cars</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-brand">Faheem Motors</div>
-        <ul class="nav-links">
-            <li><a href="#home" class="nav-link">Home</a></li>
-            <li><a href="#about" class="nav-link">About</a></li>
-            <li><a href="#cars" class="nav-link">Cars</a></li>
-            <li><a href="#contact" class="nav-link">Contact</a></li>
-        </ul>
-        <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
+
+  <!-- 1. PREMIUM LOADING SCREEN -->
+  <div class="loader" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">FAHEEM <span>DEALER</span></div>
+      <p>THE ART OF DRIVING</p>
+      <div class="loader-track"><div class="loader-progress"></div></div>
+      <small>PREPARING YOUR EXPERIENCE</small>
+    </div>
+  </div>
+
+  <!-- 2. HEADER AND NAVIGATION -->
+  <header class="header" id="header">
+    <a href="#home" class="logo">FAHEEM <span>DEALER</span><small>PREMIUM AUTOMOBILES</small></a>
+
+    <button class="burger" id="burger" aria-label="Open navigation"
+      aria-expanded="false" aria-controls="navbar">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="navbar" id="navbar">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#cars" class="nav-link">Cars</a>
+      <a href="#contact" class="nav-link">Contact</a>
     </nav>
 
-    <!-- Home Section -->
-    <section id="home" class="section home-section">
-        <div class="hero-overlay">
-            <h1 class="brand-name">Faheem Motors</h1>
-            <h2 class="owner-name">By Faheem</h2>
-            <p class="tagline">Your Trusted Partner for Premium Cars</p>
-            <a href="#cars" class="cta-button">Explore Cars</a>
+    <a href="#cars" class="header-cta">EXPLORE COLLECTION <span>↗</span></a>
+  </header>
+
+  <main>
+    <!-- 3. HOME / HERO SLIDESHOW -->
+    <section class="hero" id="home">
+      <div class="hero-slides">
+        <div class="hero-slide active" style="--hero-image:url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=85')"></div>
+        <div class="hero-slide" style="--hero-image:url('https://images.unsplash.com/photo-1614200187524-dc4b892acf16?auto=format&fit=crop&w=2000&q=85')"></div>
+        <div class="hero-slide" style="--hero-image:url('https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=2000&q=85')"></div>
+      </div>
+
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow"><span></span> EXCELLENCE SINCE 2010 <span></span></p>
+
+        <!-- FIX: FAHEEM UPAR, DEALER NEECHE -->
+        <h1 id="heroTitle">
+          <span class="hero-word">FAHEEM</span>
+          <span class="hero-word">DEALER</span>
+        </h1>
+
+        <h2>PREMIUM LUXURY CARS</h2>
+
+        <p class="hero-description">
+          Discover your dream car with FAHEEM DEALER. Explore premium vehicles,
+          affordable prices and trusted service since 2010.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#cars" class="btn btn-gold">EXPLORE CARS <span>↗</span></a>
+          <a href="#contact" class="btn btn-outline">CONTACT US <span>↗</span></a>
         </div>
+      </div>
+
+      <div class="hero-bottom">
+        <span>01 — 03</span>
+        <div class="hero-dots">
+          <button class="hero-dot active" data-slide="0" aria-label="Slide 1"></button>
+          <button class="hero-dot" data-slide="1" aria-label="Slide 2"></button>
+          <button class="hero-dot" data-slide="2" aria-label="Slide 3"></button>
+        </div>
+        <span class="scroll-hint">SCROLL TO DISCOVER ↓</span>
+      </div>
+
+      <div class="hero-line"></div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="section about-section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <p class="about-text">
-                I am Faheem, a trusted and reliable car dealer with years of experience in the automotive industry. 
-                I provide high-quality cars at the best prices with complete transparency and excellent customer service. 
-                Customer satisfaction is my top priority, and I have helped hundreds of families find their perfect vehicle.
+    <!-- 4. ABOUT SECTION -->
+    <section class="section about-section" id="about">
+      <div class="section-container">
+        <div class="about-grid">
+          <div class="about-visual reveal">
+            <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=85"
+              alt="Luxury automobile in a showroom" loading="lazy">
+
+            <div class="about-image-label">
+              <span>FS.</span>
+              <div>DRIVEN BY EXCELLENCE<small>EST. 2010</small></div>
+            </div>
+
+            <div class="about-outline"></div>
+          </div>
+
+          <div class="about-content reveal">
+            <p class="eyebrow"><span></span> OUR STORY</p>
+            <h2 class="section-title">ABOUT <span>FAHEEM DEALER</span></h2>
+
+            <p class="about-description">
+              FAHEEM DEALER is a trusted car dealership established in 2010.
+              Our mission is to provide quality vehicles, affordable prices
+              and excellent customer service. We help our customers find
+              their dream cars with confidence and convenience.
             </p>
-            <div class="testimonials">
-                <div class="testimonial-box">
-                    <h3>Ali</h3>
-                    <p>"Faheem yeh car dealer trusted banda he, isse mene 2 car li he. Best service and honest dealing!"</p>
-                </div>
-                <div class="testimonial-box">
-                    <h3>Ahmed</h3>
-                    <p>"Bahut acha dealership, transparent prices aur professional service. Highly recommended!"</p>
-                </div>
-                <div class="testimonial-box">
-                    <h3>Sara</h3>
-                    <p>"Trusted and reliable. Bought my family car from Faheem Motors. Very satisfied with the experience."</p>
-                </div>
-            </div>
+
+            <p class="about-extra">
+              From everyday comfort to extraordinary performance, explore a
+              curated selection of vehicles designed to match your lifestyle.
+            </p>
+
+            <a href="#cars" class="text-link">DISCOVER OUR COLLECTION <span>→</span></a>
+          </div>
         </div>
+
+        <div class="stats-grid" id="statsGrid">
+          <article class="stat-card reveal">
+            <div class="stat-icon">◈</div>
+            <h3>15+ Years of Experience</h3>
+            <p>Experience and dedication to quality automotive service.</p>
+          </article>
+
+          <article class="stat-card reveal">
+            <div class="stat-icon">✧</div>
+            <h3>Premium Quality Cars</h3>
+            <p>A curated selection of vehicles for different lifestyles.</p>
+          </article>
+
+          <article class="stat-card reveal">
+            <div class="stat-icon">◇</div>
+            <h3>Affordable Prices</h3>
+            <p>Transparent demo pricing to help you explore your options.</p>
+          </article>
+
+          <article class="stat-card reveal">
+            <div class="stat-icon">♕</div>
+            <h3>Customer Satisfaction</h3>
+            <p>Personal attention throughout your car-buying journey.</p>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Cars Section -->
-    <section id="cars" class="section cars-section">
-        <div class="container">
-            <h2 class="section-title">Our Cars</h2>
-            <div class="cars-grid" id="cars-grid">
-                <!-- Cars will be inserted here by JavaScript -->
-            </div>
-            <div class="order-now-container">
-                <button class="order-now-btn" id="orderNowBtn">Order Now</button>
-            </div>
+    <!-- 5. CARS / COLLECTION SECTION -->
+    <section class="section cars-section" id="cars">
+      <div class="section-container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> THE COLLECTION</p>
+            <h2 class="section-title">FIND YOUR <span>PERFECT DRIVE</span></h2>
+          </div>
+          <p class="section-side-text">
+            Exceptional design. Remarkable performance.<br>
+            Your next journey begins here.
+          </p>
         </div>
+
+        <div class="car-filters reveal" id="carFilters">
+          <button class="filter-btn active" data-filter="All">ALL CARS <span>12</span></button>
+          <button class="filter-btn" data-filter="Toyota">TOYOTA</button>
+          <button class="filter-btn" data-filter="Tesla">TESLA</button>
+          <button class="filter-btn" data-filter="Ferrari">FERRARI</button>
+        </div>
+
+        <div class="cars-grid" id="carsGrid"></div>
+
+        <p class="demo-note">
+          * All vehicle listings, specifications and prices are demonstrations, not verified live inventory.
+        </p>
+      </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact-section">
-        <div class="container">
-            <h2 class="section-title">Contact Us</h2>
-            <div class="contact-info">
-                <p><strong>Mobile:</strong> 03273341233</p>
-                <p><strong>Email:</strong> faheem1218@gmail.com</p>
-                <p><strong>Address:</strong> Main Boulevard, Lahore, Pakistan</p>
-            </div>
-            <form class="contact-form" id="contactForm">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message" rows="5" required></textarea>
-                <button type="submit">Send Message</button>
-            </form>
+    <!-- 6. CUSTOMER REVIEWS -->
+    <section class="section reviews-section" id="reviews">
+      <div class="section-container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> CUSTOMER EXPERIENCES</p>
+            <h2 class="section-title">WORDS THAT <span>MATTER</span></h2>
+          </div>
+          <p class="section-side-text">
+            A premium experience is about more<br>
+            than just the car.
+          </p>
         </div>
+
+        <div class="reviews-grid">
+          <article class="review-card reveal">
+            <div class="review-top">
+              <span class="quote-mark">“</span>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>FAHEEM DEALER provided excellent service and helped me find a quality car.</p>
+            <div class="review-person">
+              <div class="review-avatar">AK</div>
+              <div><h3>Ahmed Khan</h3><small>Demo review</small></div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-top">
+              <span class="quote-mark">“</span>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>Professional service and a great selection of vehicles. The experience was smooth.</p>
+            <div class="review-person">
+              <div class="review-avatar">SA</div>
+              <div><h3>Sara Ahmed</h3><small>Demo review</small></div>
+            </div>
+          </article>
+
+          <article class="review-card reveal">
+            <div class="review-top">
+              <span class="quote-mark">“</span>
+              <span class="stars">★★★★★</span>
+            </div>
+            <p>Very helpful team and a smooth buying experience from start to finish.</p>
+            <div class="review-person">
+              <div class="review-avatar">UM</div>
+              <div><h3>Usman Malik</h3><small>Demo review</small></div>
+            </div>
+          </article>
+        </div>
+
+        <p class="demo-note">
+          These are sample reviews for demonstration only. They are not verified customer testimonials.
+        </p>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer-left">
-            <p>Email: faheem1218@gmail.com</p>
-            <p>Phone: 03273341233</p>
+    <!-- 7. CONTACT SECTION -->
+    <section class="section contact-section" id="contact">
+      <div class="section-container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow"><span></span> GET IN TOUCH</p>
+            <h2 class="section-title">LET'S FIND YOUR <span>NEXT CAR</span></h2>
+          </div>
+          <p class="section-side-text">
+            Have a question? Tell us what<br>
+            you're looking for.
+          </p>
         </div>
-        <div class="footer-right">
-            <p class="brand">Faheem Motors</p>
-            <p>Premium Cars</p>
-        </div>
-    </footer>
 
-    <script src="script.js"></script>
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <h3>Connect with <span>FAHEEM DEALER</span></h3>
+            <p class="contact-intro">
+              Reach out for vehicle information, pricing enquiries or assistance choosing your next car.
+            </p>
+
+            <div class="contact-item">
+              <div class="contact-icon">✉</div>
+              <div>
+                <small>EMAIL ADDRESS</small>
+                <span>faheem1218k@gmail.com</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">◉</div>
+              <div>
+                <small>WHATSAPP</small>
+                <span id="contactWhatsApp">3273341233</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">⌖</div>
+              <div>
+                <small>OUR LOCATION</small>
+                <span>Karachi, Pakistan</span>
+              </div>
+            </div>
+
+            <div class="contact-note">
+              <span>✧</span>
+              <p>
+                Every great journey starts with a conversation. Contact us to discuss your preferred vehicle.
+              </p>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <h3>Send an Enquiry</h3>
+            <p class="form-subtitle">Fill in your details and we'll help you get started.</p>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="fullName">FAHEEM DEALER *</label>
+                <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="+92 3XX XXXXXXX" required>
+              </div>
+
+              <div class="form-group">
+                <label for="selectCar">Select Car *</label>
+                <select id="selectCar" name="selectCar" required>
+                  <option value="">Choose a brand</option>
+                  <option value="Toyota">Toyota Corolla</option>
+                  <option value="Tesla">Tesla</option>
+                  <option value="Ferrari">Ferrari</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" rows="5"
+                placeholder="Tell us which car you're interested in..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-gold submit-btn">
+              SUBMIT ENQUIRY <span>↗</span>
+            </button>
+
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+
+            <p class="form-disclaimer">
+              Demo form: this page does not send emails or store enquiries. Connect a secure backend to receive submissions.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 8. FOOTER -->
+  <footer class="footer reveal" id="footer">
+    <div class="footer-main section-container">
+      <div class="footer-brand">
+        <a href="#home" class="logo">
+          FAHEEM <span>DEALER</span>
+          <small>PREMIUM AUTOMOBILES</small>
+        </a>
+        <p>Driven by excellence. Dedicated to your next journey.</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>QUICK LINKS</h3>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#cars">Cars</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer-links">
+        <h3>CONTACT</h3>
+        <a href="mailto:faheem1218k@gmail.com">faheem1218k@gmail.com</a>
+        <span>03273341233</span>
+        <span>Karachi, Pakistan</span>
+      </div>
+
+      <div class="footer-links">
+        <h3>FOLLOW US</h3>
+        <div class="social-links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">IG</a>
+          <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">FB</a>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YT</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 FAHEEM DEALER. All Rights Reserved.</p>
+      <a href="#home">BACK TO TOP ↑</a>
+    </div>
+  </footer>
+
+  <!-- 9. CAR GALLERY MODAL -->
+  <div class="modal gallery-modal" id="galleryModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="gallery"></div>
+
+    <div class="gallery-dialog" role="dialog" aria-modal="true" aria-label="Car image gallery">
+      <button class="modal-close" data-close="gallery" aria-label="Close gallery">×</button>
+
+      <div class="gallery-heading">
+        <p class="eyebrow">FAHEEM DEALER COLLECTION</p>
+        <h2 id="galleryTitle">CAR GALLERY</h2>
+      </div>
+
+      <div class="gallery-image-wrap">
+        <button class="gallery-arrow prev" id="galleryPrev" aria-label="Previous image">‹</button>
+        <img id="galleryImage" src="" alt="Selected car">
+        <button class="gallery-arrow next" id="galleryNext" aria-label="Next image">›</button>
+      </div>
+
+      <div class="gallery-footer">
+        <span id="galleryCounter">1 / 3</span>
+        <span>FAHEEM DEALER · PREMIUM AUTOMOBILES</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- 10. CAR DETAILS MODAL -->
+  <div class="modal details-modal" id="detailsModal" aria-hidden="true">
+    <div class="modal-backdrop" data-close="details"></div>
+
+    <div class="details-dialog" role="dialog" aria-modal="true" aria-label="Car details">
+      <button class="modal-close" data-close="details" aria-label="Close details">×</button>
+      <div id="detailsContent"></div>
+    </div>
+  </div>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <script src="script.js"></script>
 </body>
 </html>
